@@ -37,7 +37,9 @@ the data is organized by the following columns
 
 
 #### Methodology
+
 1. Check nulls and duplicates
+
 ![image](images/nulls_duplicates.png)
 
 2. defining the categorical variables and their participation in the dat
@@ -49,51 +51,68 @@ the data is organized by the following columns
 | Contract Length  | ![image](images/contract_length.png) | ![image](images/contract_length1.png)  |
 
 3. Correlation and distribution
+
 The data distribution is quite balanced as we observe in the churn data.
+
 ![image](images/distribution.png)
 
 By running the correlation values we found that there are no highly correlated characteristics that we should remove to improve our models so we will use all of them.
 ![image](images/correlations.png)
 
 4. Training with simple methods to have a line of comparison
+
 ##### Dummy
+
 ![image](images/dummy.png)
 
 ##### Logistic Regression
+
 ![image](images/LR.png)
 
 ##### KNN Neighbors
+
 ![image](images/KNN.png)
 
 ##### Decision Tree
+
 ![image](images/DT.png)
 
 ##### SVM
+
 ![image](images/SVM.png)
 
 4. Train KNN, Logistic regression, Decision tree and SVM models in search of the best one with GridSearch
 
 ##### Logistic Regression
+
 ![image](images/LRGS.png)
 
 ##### KNeighbors
+
 ![image](images/KNNGS.png)
 
 ##### Decision Tree
+
 ![image](images/DTGS.png)
 
 ##### SVM
+
 this iteration was limited to 10,000 iterations because when I ran without limits it generated a time of almost 9 hours and the results were not of great difference.
+
 ![image](images/SVMGS.png)
 
 ![image](images/SVMGSALL.png)
 
 #### Results
+
 The following notebook contains all the data analysis of the selected dataset using the different methodologies proposed and the findings found.
+
 [capstone.ipynb](https://github.com/ronalcamilo/capstone/blob/main/capstone.ipynb)
 
 In the following table we can see the results of the executions in a simple way and with grid search and from which we will start our analysis.
+
 ![image](images/results.png)
+
 A review of the results shows that the execution of the models in a simple way gives very good results close to 89% in the different scores. Then, performing the execution using GridSearchCV, we found, according to the selected parameters, an improvement in some models of more than 90% in the scores.
 
 The decision tree model achieved the highest and most satisfactory scores for this type of information, but having such a tight data I think it would not be the best as it is quite prone to overfitting I have some doubts after running the model with test data in real environment generate an imbalance and the possibility of a bad rating.
@@ -106,16 +125,20 @@ The SVM model has taken a long time to run in its simple way and performing it w
 
 
 ##### Feature importance
+
 Using KNN as a base model I have decided to understand what the most important features are and to determine why they are important.
+
 ![image](images/importances.png)   
 
 * I can see how late payments are a great sign that the account is not satisfied with the service and is likely to think about switching service providers.
 * The support calls indicate that there are different non-conformities which may lead to customer decisions.
 * The other characteristics are part of the service that can help us to get closer to the prediction but my focus would be mainly on the above described characteristics and I could refine the models further if I find other properties that are related to these nonconformity symptoms.
+
 ![image](images/importancesplot.png)
 
 
 #### Next steps
+
 With the approach and understanding obtained with this model selection and with the test information with which it was trained, I can begin a search for other characteristics that help me determine and refine the prediction.
 * A clear example is qualifying support calls on topics and the result of the same in order to be able to have a greater spectrum of what our clients are dissatisfied with 
 * I also believe that a classification of the client as VIP or account size could help us segment and give a degree of importance to important accounts. 
