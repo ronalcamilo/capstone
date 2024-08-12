@@ -149,3 +149,7 @@ With the approach and understanding obtained with this model selection and with 
 
 * One of the next steps is to approach the quality control and customer service area and start collecting data on the characteristics that I already have and start testing with the information that I can collect, also analyzing with them and creating some interviews and looking for new ones. characteristics that help us with this identification
 
+#### Contact and Further Information
+Ronal Camilo Cuellar
+Fullstack Developer
+Email: ronalcamilo@gmail.com
