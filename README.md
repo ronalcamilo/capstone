@@ -136,12 +136,16 @@ Using KNN as a base model I have decided to understand what the most important f
 
 ![image](images/importancesplot.png)
 
+#### Findings
+
+* A clear example is qualifying support calls on topics and the result of the same in order to be able to have a greater spectrum of what our clients are dissatisfied with 
+* I also believe that a classification of the client as VIP or account size could help us segment and give a degree of importance to important accounts. 
+* There are also several market segments where our clients are located, which can generate a rating of how much they rotate in search of a better service, which can help us determine and get closer to reality.
+
 
 #### Next steps
 
 With the approach and understanding obtained with this model selection and with the test information with which it was trained, I can begin a search for other characteristics that help me determine and refine the prediction.
-* A clear example is qualifying support calls on topics and the result of the same in order to be able to have a greater spectrum of what our clients are dissatisfied with 
-* I also believe that a classification of the client as VIP or account size could help us segment and give a degree of importance to important accounts. 
-* There are also several market segments where our clients are located, which can generate a rating of how much they rotate in search of a better service, which can help us determine and get closer to reality.
+
 * One of the next steps is to approach the quality control and customer service area and start collecting data on the characteristics that I already have and start testing with the information that I can collect, also analyzing with them and creating some interviews and looking for new ones. characteristics that help us with this identification
 
