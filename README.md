@@ -126,7 +126,7 @@ The SVM model has taken a long time to run in its simple way and performing it w
 
 |  |  |   | 
 | ------------- | ------------- | ------------- |
-| ![image](images/modelTrain.png) | ![image](images/modelTrainA.png)  | ![image](images/modelTestA.png)  |
+| ![image](images/modelTrain.png) | ![image](images/modelTrainA.png)  | ![image](images/modelTestAcc.png)  |
 | ![image](images/modelRecall.png) | ![image](images/modelF1.png)  | ![image](images/modelPrecision.png)  |
 
 
