@@ -62,46 +62,49 @@ By running the correlation values we found that there are no highly correlated c
 4. Training with simple methods to have a line of comparison
 
 ##### Dummy
-
+We run a baseline with the dummy model in order to have some reference values with respect to the other models.
 ![image](images/dummy.png)
 
 ##### Logistic Regression
-
+With Logistic Regression we can see quite fast training times and a high accurrency over 80 and it shows a good behavior of the characteristics.
 ![image](images/LR.png)
 
 ##### KNN Neighbors
-
+KNN had a very good time and over 80 as well.
 ![image](images/KNN.png)
 
 ##### Decision Tree
-
+It was quite fast the accurrency too close to 100 which makes me suspect that we have overfitting
 ![image](images/DT.png)
 
 ##### SVM
-
+Training times too high and accurrency similar to LR where we see no major improvement.
 ![image](images/SVM.png)
 
 4. Train KNN, Logistic regression, Decision tree and SVM models in search of the best one with GridSearch
 
 ##### Logistic Regression
-
+It improved a little with the GridSearch and the assigned parameters but it was not a substantial improvement.
 ![image](images/LRGS.png)
 
 ##### KNeighbors
-
+had a significant improvement with the assigned parameters and accurrancy high
 ![image](images/KNNGS.png)
 
 ##### Decision Tree
-
+By assigning new parameters in the GridSearch and pruning some paths we see that the overfitting may not be there but it still looks like it was overfitting.
 ![image](images/DTGS.png)
 
 ##### SVM
 
-this iteration was limited to 10,000 iterations because when I ran without limits it generated a time of almost 9 hours and the results were not of great difference.
+this iteration was limited to 1000 iterations because when I ran without limits it generated a time of almost 9 hours and the results were not of great difference.
 
-![image](images/SVMGS.png)
+| Limited | Unlimited |
+| ------------- | ------------- |
+| ![image](images/SVMGS.png) | ![image](images/SVMGSALL.png)  |
 
-![image](images/SVMGSALL.png)
+
+
 
 #### Results
 
@@ -121,7 +124,10 @@ The KNN model when run with the GridSearch achieved a considerable improvement i
 
 The SVM model has taken a long time to run in its simple way and performing it with GridSearch selecting some parameters of execution took a very high training time of 9 hours so I decided to restrict in 10000 iterations since I did not find metrics higher than 90% so I discard it for the great computational effort it takes.
 
-![image](images/resultsplot.png)
+|  |  |   | 
+| ------------- | ------------- | ------------- |
+| ![image](images/modelTrain.png) | ![image](images/modelTrainA.png)  | ![image](images/modelTestA.png)  |
+| ![image](images/modelRecall.png) | ![image](images/modelF1.png)  | ![image](images/modelPrecision.png)  |
 
 
 ##### Feature importance
